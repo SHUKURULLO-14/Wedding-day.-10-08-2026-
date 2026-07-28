@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirojiddin & Dinora — To'y Taklifnomasi</title>
+    <!-- Tailwind CSS (Dizayn uchun) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-cursive { font-family: 'Great Vibes', cursive; }
+        .font-body { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 font-body text-stone-800 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Asosiy Taklifnoma Kartasi -->
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden text-center border border-amber-100 p-6 md:p-8 space-y-6">
+        
+        <!-- Yuqori Bezak / Naqsh -->
+        <div class="text-amber-600 text-sm tracking-widest uppercase font-semibold">
+            Baxt To'yi Taklifnomasi
+        </div>
+
+        <!-- Kelin-Kuyov Ismlari -->
+        <div>
+            <h1 class="font-cursive text-5xl text-amber-700 my-2">Sirojiddin</h1>
+            <p class="text-2xl text-stone-400 font-light">&</p>
+            <h1 class="font-cursive text-5xl text-amber-700 my-2">Dinora</h1>
+        </div>
+
+        <p class="text-stone-600 text-sm italic leading-relaxed px-4">
+            "Sizlarni quvonchli kunimiz — nikoh to'yimizga lutfan taklif etamiz!"
+        </p>
+
+        <hr class="border-amber-200 w-1/2 mx-auto">
+
+        <!-- Sana va Vaqt -->
+        <div class="space-y-1">
+            <p class="text-amber-800 font-semibold text-lg">25-Avgust, 2026-yil</p>
+            <p class="text-stone-500 text-sm">Soat: <span class="font-medium text-stone-700">18:00 da</span></p>
+        </div>
+
+        <!-- Ortga Hisoblash Taymeri -->
+        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100">
+            <p class="text-xs text-amber-800 uppercase tracking-wider mb-2">Tantanagacha qoldi:</p>
+            <div id="countdown" class="flex justify-center space-x-4 text-amber-900 font-bold">
+                <div><span id="days" class="text-2xl">00</span><br><span class="text-xs font-normal text-stone-500">kun</span></div>
+                <div><span id="hours" class="text-2xl">00</span><br><span class="text-xs font-normal text-stone-500">soat</span></div>
+                <div><span id="minutes" class="text-2xl">00</span><br><span class="text-xs font-normal text-stone-500">daqiqa</span></div>
+                <div><span id="seconds" class="text-2xl">00</span><br><span class="text-xs font-normal text-stone-500">soniya</span></div>
+            </div>
+        </div>
+
+        <!-- Manzil va Xarita Tugmasi -->
+        <div class="space-y-3 pt-2">
+            <p class="font-medium text-stone-700">Manzil: "Yulduz" To'yxonasi</p>
+            <p class="text-xs text-stone-500">Toshkent shahri, Yunusobod tumani</p>
+            <a href="https://yandex.uz/maps" target="_blank" class="inline-flex items-center justify-center w-full py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-xl shadow-md transition duration-200 gap-2">
+                📍 Xaritada ko'rish
+            </a>
+        </div>
+
+        <!-- RSVP Formasi (Kelishni tasdiqlash) -->
+        <div class="pt-4 border-t border-stone-100">
+            <h3 class="text-sm font-semibold text-stone-700 mb-3">Tashrifingizni tasdiqlaysizmi?</h3>
+            <form id="rsvpForm" class="space-y-3">
+                <input type="text" placeholder="Ismingiz" required class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-amber-500 text-sm">
+                <select class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-amber-500 text-sm text-stone-600">
+                    <option value="1">Albatta boraman</option>
+                    <option value="0">Afsuski, bora olmayman</option>
+                </select>
+                <button type="submit" class="w-full py-2 bg-stone-800 text-white rounded-lg text-sm hover:bg-stone-900 transition">Yuborish</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JavaScript (Taymer va Mantiq uchun) -->
+    <script>
+        // To'y sanasini belgilash (Yil, Oy (0 dan boshlanadi), Kuni, Soat, Daqiqa)
+        const weddingDate = new Date(2026, 7, 25, 18, 0, 0).getTime(); // 25-Avgust 2026
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "<p class='text-amber-700'>To'y kuni yetib keldi!</p>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (10Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+
+
