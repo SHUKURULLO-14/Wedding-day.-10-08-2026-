@@ -279,15 +279,13 @@ AOS.init({
 
 <script src="script.js"></script>
 
-</body>
-    <script>
-const btn = document.getElementById("openBtn");
-const loader = document.getElementById("loader");
-const music = document.getElementById("music");
-
-btn.onclick = function(){
-    loader.style.display = "none";
-    music.play();
-};
+<script>
+document.getElementById("openBtn").addEventListener("click", function(){
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("music").play();
+});
 </script>
+
+</body>
+</html>
 </html>
