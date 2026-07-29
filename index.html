@@ -281,3 +281,13 @@ AOS.init({
 
 </body>
 </html>
+<script>
+const btn = document.getElementById("openBtn");
+const loader = document.getElementById("loader");
+const music = document.getElementById("music");
+
+btn.onclick = function(){
+    loader.style.display = "none";
+    music.play();
+};
+</script>
