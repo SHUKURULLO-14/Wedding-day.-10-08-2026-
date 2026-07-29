@@ -42,11 +42,10 @@ img{
 /* Loader */
 
 #loader {
-#loader {
     position: fixed;
     inset: 0;
-    /* Faqat kelin-kuyov rasmi (hech qanday qorong'u qatlamsiz) */
-    background: url("assets/images/2.jpg") center center/cover no-repeat;
+    /* !important qo'shish orqali boshqa uslublar ustidan ustunlik beramiz */
+    background: url("assets/images/14363.jpg") center center / cover no-repeat !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,23 +59,25 @@ img{
 .loader-content h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
-    color: #ffd700;
-    text-shadow: none; /* Soya yo'q */
+    color: #c59b27;
+    margin: 0;
+    text-shadow: none !important;
 }
 
 .loader-content span {
     font-size: 40px;
-    color: #ffd700;
-    text-shadow: none; /* Soya yo'q */
+    color: #c59b27;
+    text-shadow: none !important;
+    display: block;
+    margin: 10px 0;
 }
 
 .loader-content p {
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
     font-size: 18px;
-    color: #ffffff;
-    text-shadow: none; /* Soya yo'q */
+    color: #4a4a4a;
+    text-shadow: none !important;
 }
-
 
 
 #openBtn{
