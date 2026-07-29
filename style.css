@@ -44,11 +44,7 @@ img{
 #loader{
     position: fixed;
     inset: 0;
-    background-image: url("assets/images/2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    background: url("assets/images/2.jpg") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
