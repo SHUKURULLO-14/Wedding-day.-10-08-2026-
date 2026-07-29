@@ -1,141 +1,634 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Times New Roman", serif;
+/* ===========================
+   SHUKURULLO ❤️ NILUFARXON
+   Wedding Invitation
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background: #000;
-    color: white;
+html{
+    scroll-behavior:smooth;
 }
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf7f2;
+    color:#333;
+    overflow-x:hidden;
 }
 
-.bg-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.45);
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
 }
 
-.content {
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    animation: fadeIn 2s ease;
+a{
+    text-decoration:none;
 }
 
-.small-title {
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+img{
+    width:100%;
+    display:block;
 }
 
-h1 {
-    font-size: 55px;
-    line-height: 1.1;
-    color: #f5d27a;
+/* Loader */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#f8f3ee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
 }
 
-h1 span {
-    font-size: 35px;
+.loader-content{
+    text-align:center;
 }
 
-.date {
-    margin-top: 30px;
-    font-size: 32px;
-    color: #fff;
+.loader-content h1{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#b8860b;
 }
 
-.time {
-    font-size: 22px;
-    margin-top: 10px;
+.loader-content span{
+    font-size:40px;
+    color:#d4af37;
 }
 
-.place {
-    margin-top: 25px;
-    font-size: 20px;
+.loader-content p{
+    margin:20px 0;
+    font-size:18px;
 }
 
-button {
-    margin-top: 35px;
-    padding: 14px 35px;
-    border-radius: 30px;
-    border: 1px solid #f5d27a;
-    background: transparent;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
+#openBtn{
+    padding:14px 40px;
+    border:none;
+    border-radius:50px;
+    background:#b8860b;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
 }
 
-button:hover {
-    background: #f5d27a;
-    color: black;
+#openBtn:hover{
+    background:#8d6800;
+    transform:scale(1.05);
+}
+/* ===========================
+   SHUKURULLO ❤️ NILUFARXON
+   Wedding Invitation
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.invitation {
-    padding: 50px 25px;
-    text-align: center;
-    background: #fff;
-    color: #333;
+html{
+    scroll-behavior:smooth;
 }
 
-.invitation h2 {
-    color: #b28a32;
-    font-size: 32px;
-    margin-bottom: 20px;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf7f2;
+    color:#333;
+    overflow-x:hidden;
 }
 
-.invitation p {
-    font-size: 19px;
-    line-height: 1.7;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* Loader */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#f8f3ee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h1{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#b8860b;
+}
+
+.loader-content span{
+    font-size:40px;
+    color:#d4af37;
+}
+
+.loader-content p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+#openBtn{
+    padding:14px 40px;
+    border:none;
+    border-radius:50px;
+    background:#b8860b;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+#openBtn:hover{
+    background:#8d6800;
+    transform:scale(1.05);
+}
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url("assets/images/bg.jpg") center/cover no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    padding:20px;
+}
+
+.welcome{
+    font-size:20px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    opacity:.9;
+}
+
+.hero-content h1{
+    font-family:'Great Vibes',cursive;
+    font-size:90px;
+    line-height:1.2;
+    color:#fff;
+}
+
+.hero-content h1 span{
+    display:block;
+    font-size:60px;
+    margin:10px 0;
+    color:#f5d77d;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:30px auto;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 40px;
+    border-radius:50px;
+    background:#d4af37;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b8860b;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   COUNTDOWN
+=========================== */
+
+#countdown{
+    padding:90px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+#countdown h2{
+    font-size:46px;
+    margin-bottom:40px;
+    color:#b8860b;
+}
+
+.count-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.count-box div{
+    width:140px;
+    background:#faf7f2;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.count-box span{
+    display:block;
+    font-size:42px;
+    font-weight:bold;
+    color:#b8860b;
+}
+
+.count-box p{
+    margin-top:10px;
+    font-size:17px;
+}
+/* ===========================
+   INVITATION
+=========================== */
+
+.invitation{
+    padding:100px 20px;
+    background:#fff;
+    text-align:center;
+}
+
+.invitation h2{
+    font-size:50px;
+    color:#b8860b;
+    margin-bottom:15px;
+}
+
+.invitation h3{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#444;
+    margin-bottom:25px;
+}
+
+.invitation p{
+    max-width:750px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.9;
+    color:#666;
+}
+
+/* ===========================
+   EVENT INFO
+=========================== */
+
+.event-info{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:90px 20px;
+    background:#faf7f2;
+}
+
+.card{
+    width:300px;
+    background:#fff;
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+    color:#666;
+    line-height:1.7;
+}
+
+/* ===========================
+   LOCATION
+=========================== */
+
+.location{
+    padding:100px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.location h2{
+    font-size:48px;
+    color:#b8860b;
+    margin-bottom:20px;
+}
+
+.location h3{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.location p{
+    font-size:19px;
+    color:#666;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.map-btn{
+    display:inline-block;
+    padding:16px 36
+    border-radius:50px;
+    background:#d4af37;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.map-btn:hover{
+    background:#b8860b;
+    transform:scale(1.05);
+}
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+    padding:100px 20px;
+    background:#faf7f2;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:48px;
+    color:#b8860b;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   THANKS
+=========================== */
+
+.thanks{
+    padding:100px 20px;
+    background:#fff;
+    text-align:center;
+}
+
+.thanks h2{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#b8860b;
+    margin-bottom:20px;
+}
+
+.thanks p{
+    font-size:20px;
+    color:#666;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#b8860b;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    margin:8px 0;
+    font-size:18px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:58px;
+}
+
+.hero-content h1 span{
+    font-size:42px;
+}
+
+.subtitle{
+    font-size:17px;
+}
+
+.invitation h2,
+.location h2,
+.gallery h2{
+    font-size:36px;
+}
+
+.invitation h3{
+    font-size:50px;
+}
+
+.count-box div{
+    width:120px;
+}
+
+.card{
+    width:100%;
+    max-width:340px;
+}
+
+.thanks h2{
+    font-size:48px;
+}
+
+}
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
-
-@media(max-width:600px){
-
-    h1 {
-        font-size: 40px;
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
     }
-
-    .date {
-        font-size: 25px;
+    to{
+        opacity:1;
+        transform:scale(1);
     }
+}
 
-    .place {
-        font-size: 17px;
-    }
+.hero-content{
+    animation:fadeUp 1.5s ease;
+}
 
+.invitation,
+.event-info,
+.location,
+.gallery,
+.thanks{
+    animation:fadeUp 1s ease;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f5f5f5;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#c8a24d;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#a87f22;
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+    background:#d4af37;
+    color:#fff;
+}
+
+/* ===========================
+   IMAGE EFFECT
+=========================== */
+
+.gallery-grid img{
+    overflow:hidden;
+}
+
+.gallery-grid img:hover{
+    filter:brightness(1.05);
+    transform:scale(1.08) rotate(.5deg);
+}
+
+/* ===========================
+   BUTTON EFFECT
+=========================== */
+
+.btn,
+.map-btn,
+#openBtn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before,
+.map-btn::before,
+#openBtn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.25);
+    transition:.6s;
+}
+
+.btn:hover::before,
+.map-btn:hover::before,
+#openBtn:hover::before{
+    left:100%;
 }
