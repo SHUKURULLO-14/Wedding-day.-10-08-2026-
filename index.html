@@ -1,70 +1,128 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shukurullo & Nilufarxon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Shukurullo ❤️ Nilufarxon</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
 </head>
 
 <body>
 
-<div class="hero">
+<div id="loader">
 
-    <video autoplay muted loop playsinline class="bg-video">
-        <source src="assets/video/wedding.mp4" type="video/mp4">
-    </video>
+<div class="loader-content">
 
-    <div class="overlay"></div>
+<h1>Shukurullo</h1>
 
-    <div class="content">
+<span>&</span>
 
-        <p class="small-title">Bizning baxtli kunimiz</p>
+<h1>Nilufarxon</h1>
 
-        <h1>
-            Shukurullo<br>
-            <span>&</span><br>
-            Nilufarxon
-        </h1>
+<p>Taklifnomani ochish</p>
 
-        <div class="date">
-            10.08.2026
-        </div>
-
-        <div class="time">
-            Soat 17:30
-        </div>
-
-        <p class="place">
-            Yangiqo‘rg‘on shaharchasi<br>
-            "Mumtoz" to‘yxonasi
-        </p>
-
-        <button>
-            Taklifnomani ochish
-        </button>
-
-    </div>
+<button id="openBtn">
+Taklifnomani ochish
+</button>
 
 </div>
 
+</div>
 
-<section class="invitation">
+<audio id="music" loop>
 
-    <h2>Aziz mehmonlar!</h2>
+<source src="assets/music/music.mp3" type="audio/mpeg">
 
-    <p>
-        Sizni hayotimizdagi eng quvonchli kunimiz —
-        nikoh to‘yimizga taklif etamiz.
-        Ushbu unutilmas kunimizda siz bilan birga
-        bo‘lish biz uchun katta baxtdir.
-    </p>
+</audio>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content" data-aos="zoom-in">
+
+<p class="welcome">
+Assalomu alaykum
+</p>
+
+<h1>
+Shukurullo
+<span>&</span>
+Nilufarxon
+</h1>
+
+<p class="subtitle">
+
+Sizni nikoh to'yimizning shodiyonasiga taklif etamiz
+
+</p>
+
+<a href="#countdown" class="btn">
+
+Taklifnomani ko'rish
+
+</a>
+
+</div>
 
 </section>
 
+<section id="countdown">
 
-<script src="script.js"></script>
+<h2 data-aos="fade-up">
 
-</body>
-</html>
+To'ygacha qoldi
+
+</h2>
+
+<div class="count-box">
+
+<div>
+
+<span id="days">00</span>
+
+<p>Kun</p>
+
+</div>
+
+<div>
+
+<span id="hours">00</span>
+
+<p>Soat</p>
+
+</div>
+
+<div>
+
+<span id="minutes">00</span>
+
+<p>Daqiqa</p>
+
+</div>
+
+<div>
+
+<span id="seconds">00</span>
+
+<p>Soniya</p>
+
+</div>
+
+</div>
+
+</section>
