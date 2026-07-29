@@ -56,23 +56,27 @@ img{
 }
 
 .loader-content{
-    text-align:center;
+    text-align: center;
 }
 
 .loader-content h1{
-    font-family:'Great Vibes',cursive;
+    font-family:'Great Vibes', cursive;
     font-size:70px;
-    color:#b8860b;
+    color:#ffffff;
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
 .loader-content span{
     font-size:40px;
-    color:#d4af37;
+    color:#ffffff;
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
 .loader-content p{
     margin:20px 0;
     font-size:18px;
+    color:#ffffff;
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
 #openBtn{
