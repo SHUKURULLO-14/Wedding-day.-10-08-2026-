@@ -42,11 +42,11 @@ img{
 /* Loader */
 
 #loader {
+#loader {
     position: fixed;
     inset: 0;
-    /* Rasm ustiga 30% lik shaffof qatlam tushirildi (yozuvlar yaxshi o'qilishi uchun) */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url("assets/images/3.jpg") center center/cover no-repeat;
+    /* Faqat kelin-kuyov rasmi (hech qanday qorong'u qatlamsiz) */
+    background: url("assets/images/2.jpg") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,22 +60,23 @@ img{
 .loader-content h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
-    color: #ffffff;
-    text-shadow:none;
+    color: #ffd700;
+    text-shadow: none; /* Soya yo'q */
 }
 
 .loader-content span {
     font-size: 40px;
-    color: #ffffff;
-    text-shadow:none;
+    color: #ffd700;
+    text-shadow: none; /* Soya yo'q */
 }
 
 .loader-content p {
     margin: 20px 0;
     font-size: 18px;
     color: #ffffff;
-    text-shadow:none;
+    text-shadow: none; /* Soya yo'q */
 }
+
 
 
 #openBtn{
