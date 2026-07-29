@@ -15,7 +15,7 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#faf7f2;
+    background:url("assets/images/2.jpg") center/cover no-repeat;
     color:#333;
     overflow-x:hidden;
 }
