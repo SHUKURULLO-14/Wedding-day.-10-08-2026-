@@ -81,17 +81,17 @@ img{
 
 #openBtn{
     padding:14px 40px;
-    border:none;
+    border:2px solid #ffffff;
     border-radius:50px;
-    background:#b8860b;
-    color:#fff;
+    background:transparent;
+    color:#ffffff;
     cursor:pointer;
     font-size:16px;
     transition:.3s;
 }
 
 #openBtn:hover{
-    background:#8d6800;
+    background:rgba(255,255,255,0.2);
     transform:scale(1.05);
 }
 /* ===========================
