@@ -15,7 +15,7 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:url("assets/images/14363.jpg") center/cover no-repeat;
+    background:url("assets/images/14368.jpg") center/cover no-repeat;
     color:#333;
     overflow-x:hidden;
 }
@@ -45,7 +45,7 @@ img{
     position: fixed;
     inset: 0;
     /* !important qo'shish orqali boshqa uslublar ustidan ustunlik beramiz */
-    background: url("assets/images/14363.jpg") center center / cover no-repeat !important;
+    background: url("assets/images/14368.jpg") center center / cover no-repeat !important;
     display: flex;
     justify-content: center;
     align-items: center;
