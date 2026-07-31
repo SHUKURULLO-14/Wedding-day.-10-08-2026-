@@ -139,13 +139,7 @@
         <p>10.08.2026 | Mumtoz to'yxonasi</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-            once: true
-        });
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1200,
@@ -154,23 +148,42 @@
     </script>
     <script src="script.js"></script>
 
-    <!-- 100% SILLIQ VA RAVON TUSHISH UCHUN SKRIPT -->
+    <!-- KAFOLATLANGAN 100% RAVON SIRPANISH SKRIPTI -->
     <script>
-        // Loader va muzika kodi
+        // 1. Loader va muzika kodi
         document.getElementById("openBtn").addEventListener("click", function(){
             document.getElementById("loader").style.display = "none";
             document.getElementById("music").play();
         });
 
-        // "Taklifnomani ko'rish" tugmasini bosganda yumshoq va silliq tushirish
+        // 2. Garantiya silliq sirpantirish funksiyasi
         document.querySelector('a[href="#countdown"]').addEventListener("click", function(e) {
-            e.preventDefault(); // Shartta sakrashni to'xtatish
-            const target = document.getElementById("countdown");
+            e.preventDefault(); // Shartta o'tib ketishni to'xtatadi
             
-            target.scrollIntoView({
-                behavior: "smooth", // Silliq va ravon sirpanish
-                block: "start"
-            });
+            const target = document.getElementById("countdown");
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 800; // Sirpanish davomiyligi (0.8 soniya - xohlasangiz 1000 deb sekinlashtirishingiz mumkin)
+            let startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            // Silliq va chiroyli tushish matematikasi (Ease in-out)
+            function easeInOutQuad(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
         });
     </script>
 
