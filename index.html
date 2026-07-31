@@ -146,23 +146,27 @@
             once: true
         });
 
-        // Loader va muzika kodi
+        // Loader va muzika kodi (Instagram uchun xavfsizlashtirilgan)
         document.getElementById("openBtn").addEventListener("click", function(){
-            document.getElementById("loader").style.display = "none";
-            document.body.style.overflow = "auto"; // Scroll funksiyasini majburiy yoqamiz
-            document.getElementById("music").play();
+            const loader = document.getElementById("loader");
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+            
+            document.body.style.overflow = "auto"; 
+            
+            // Musiqani xavfsiz ishga tushirish
+            const music = document.getElementById("music");
+            music.play().catch(error => {
+                console.log("Audio autoplay bloklandi:", error);
+            });
         });
 
-        // KAFOLATLANGAN SILLIQ TUSHISH FUNKSIYASI (Har qanday mobil brauzer uchun)
-        function scrollToCountdown() {
-            const element = document.getElementById("countdown");
-            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-            
-            window.scrollTo({
-                top: elementPosition,
-                behavior: "smooth"
-            });
-        }
+        // Tugma bosganda silliq pastga tushish funksiyasi
+        document.querySelector('.hero-content .btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector('#countdown');
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
     </script>
-</body>
-</html>
