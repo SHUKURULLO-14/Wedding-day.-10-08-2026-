@@ -852,3 +852,25 @@ body > div:first-child a:hover {
     transform: translateY(-3px) scale(1.05) !important;
     background: linear-gradient(135deg, #e6c250 0%, #c59b27 100%) !important;
 }
+
+/* ==========================================
+   OCHILISH EKRANIDAGI ISMLARNI OLTIN RANGGA O'ZGARTIRISH
+========================================== */
+
+/* Shukurullo va Nilufarxon ismlari uchun porloq oltin rang */
+body > div:first-child h1 {
+    background: linear-gradient(135deg, #ffe599 0%, #d4af37 50%, #aa7c11 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 80px !important;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5)) !important;
+    margin: 5px 0 !important;
+}
+
+/* O'rtadagi & belgisi uchun sutsimon oq va yorqin rang */
+body > div:first-child span {
+    color: #ffffff !important;
+    font-size: 50px !important;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.8) !important;
+}
