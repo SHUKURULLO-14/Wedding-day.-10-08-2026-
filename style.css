@@ -1017,3 +1017,63 @@ body > div:first-child a:hover,
     border-color: #ffffff !important;
     transform: translateY(-3px) scale(1.03) !important;
 }
+
+/* ==========================================
+   LOADER (OCHILISH EKRANI) ZAMONAVIY STILI
+========================================== */
+
+/* 1. Orqa fon va xiralik */
+#loader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("assets/images/14368.jpg") center/cover no-repeat !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+/* 2. Ismlar uchun oltin rang */
+.loader-content h1 {
+    background: linear-gradient(135deg, #ffe599 0%, #d4af37 50%, #aa7c11 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: #d4af37 !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 80px !important;
+    margin: 5px 0 !important;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.6)) !important;
+    text-shadow: none !important;
+}
+
+/* 3. O'rtadagi & belgisi (Oppoq va nurli) */
+.loader-content span {
+    color: #ffffff !important;
+    font-size: 50px !important;
+    display: block !important;
+    margin: 10px 0 !important;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* 4. TUGMA: Shaffof (Glassmorphism) stil */
+#openBtn {
+    background: rgba(255, 255, 255, 0.15) !important; /* Shaffof fon */
+    backdrop-filter: blur(10px) !important;           /* Oyna effekti */
+    color: #ffffff !important;                          /* Tiniq oq matn */
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.5px !important;
+    padding: 14px 40px !important;
+    border: 1.5px solid rgba(212, 175, 55, 0.9) !important; /* Oltin ramka */
+    border-radius: 50px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+    text-shadow: none !important;
+    display: inline-block !important;
+    margin-top: 25px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Tugmaga bosilganda */
+#openBtn:hover {
+    background: rgba(212, 175, 55, 0.35) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-3px) scale(1.03) !important;
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4) !important;
+}
