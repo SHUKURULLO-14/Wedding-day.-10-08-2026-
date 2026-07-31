@@ -796,3 +796,59 @@ footer p {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 25px rgba(212, 175, 55, 0.6) !important;
     background: linear-gradient(135deg, #e6c250 0%, #c59b27 100%) !important;
 }
+
+/* ==========================================
+   LOADER (OCHILISH EKRANI) ZAMONAVIY STILI
+========================================== */
+
+/* Fullscreen loader konteyneri */
+body > div:first-child {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("assets/images/14368.jpg") center/cover no-repeat !important;
+    backdrop-filter: blur(6px);
+}
+
+/* Ismlar (Shukurullo va Nilufarxon) */
+body > div:first-child h1 {
+    color: #ffffff !important;
+    font-size: 75px !important;
+    font-family: 'Great Vibes', cursive !important;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    margin: 5px 0 !important;
+}
+
+/* Oʻrtadagi & belgisi */
+body > div:first-child span {
+    color: #d4af37 !important; /* Zamonaviy oltin rang */
+    font-size: 50px !important;
+    display: block !important;
+    text-shadow: none !important;
+}
+
+/* Ortiqcha xira "Taklifnomani ochish" matnini butkul yashirish */
+body > div:first-child p {
+    display: none !important;
+}
+
+/* Oltin rangli zamonaviy tugma */
+body > div:first-child a,
+#openBtn {
+    display: inline-block !important;
+    margin-top: 30px !important;
+    padding: 16px 45px !important;
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%) !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(212, 175, 55, 0.5) !important;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+body > div:first-child a:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    background: linear-gradient(135deg, #e6c250 0%, #c59b27 100%) !important;
+}
