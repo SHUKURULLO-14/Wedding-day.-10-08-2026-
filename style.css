@@ -943,3 +943,77 @@ body > div:first-child span {
     border-color: #ffffff !important;
     transform: translateY(-3px) scale(1.03) !important;
 }
+
+/* ==========================================
+   1-BET (OCHILISH EKRANI) UCHUN TO'LIQ STIL
+========================================== */
+
+/* Fullscreen loader foni */
+body > div:first-child {
+    position: fixed !important;
+    inset: 0 !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                url("assets/images/14368.jpg") center/cover no-repeat !important;
+    backdrop-filter: blur(5px) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 9999 !important;
+}
+
+/* Ismlar (Shukurullo va Nilufarxon) - Oltin tovlanuvchi rang */
+body > div:first-child h1 {
+    background: linear-gradient(135deg, #ffe599 0%, #d4af37 50%, #aa7c11 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: #d4af37 !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 80px !important;
+    margin: 5px 0 !important;
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5)) !important;
+    text-shadow: none !important;
+}
+
+/* O'rtadagi & belgisi - Oppoq rang */
+body > div:first-child span {
+    color: #ffffff !important;
+    font-size: 50px !important;
+    display: block !important;
+    margin: 10px 0 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Keraksiz xira textni yashirish */
+body > div:first-child p {
+    display: none !important;
+}
+
+/* TUGMA: Shaffof (Glassmorphism) stil */
+body > div:first-child a,
+body > div:first-child button,
+#openBtn {
+    background: rgba(255, 255, 255, 0.15) !important; /* Shaffof fon */
+    backdrop-filter: blur(10px) !important;           /* Oyna effekti */
+    color: #ffffff !important;                          /* Tiniq oq matn */
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.5px !important;
+    padding: 14px 40px !important;
+    border: 1.5px solid rgba(212, 175, 55, 0.9) !important; /* Oltin ramka */
+    border-radius: 50px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin-top: 25px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Tugmaga bosilganda */
+body > div:first-child a:hover,
+#openBtn:hover {
+    background: rgba(212, 175, 55, 0.35) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-3px) scale(1.03) !important;
+}
