@@ -663,3 +663,56 @@ footer p{
     backdrop-filter: blur(5px);
 }
 
+/* ==========================================
+   TASHRIFINGIZ MATNINI TINIQLASHTIRISH
+========================================== */
+
+.thanks p {
+    color: #2c2c2c !important; /* To'q va aniq ko'rinadigan rang */
+    font-weight: 600 !important; /* Shriftni qalinroq qilish */
+    font-size: 22px !important;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.9); /* Matn orqasiga yengil oq soya */
+}
+
+/* "Sizni to'yimizda kutib qolamiz!" sarlavhasi ham yanada aniq ko'rinishi uchun: */
+.thanks h2 {
+    color: #b8860b !important;
+    text-shadow: 0px 1px 4px rgba(255, 255, 255, 0.8);
+}
+
+
+/* ==========================================
+   XARITANI OCHISH TUGMASI (CHROYLI OLTIN RANG)
+========================================== */
+
+.map-btn {
+    background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    border: none !important;
+}
+
+.map-btn:hover {
+    background: linear-gradient(135deg, #aa7c11 0%, #d4af37 100%) !important;
+}
+
+
+/* ==========================================
+   PASTDAGI FOOTER (RAMKA) RANGINI O'ZGARTIRISH
+========================================== */
+
+footer {
+    /* To'q oltin va nafis gradient rang */
+    background: linear-gradient(135deg, #2b261f 0%, #1a1713 100%) !important; 
+    /* Yoki agar ochroq oltin rang xohlasangiz quyidagidan foydalaning:
+    background: linear-gradient(135deg, #c59b27 0%, #9e7913 100%) !important; 
+    */
+    color: #f5d77d !important; /* Oltin-sariq matn rangi */
+    border-top: 3px solid #d4af37; /* Yuqori qismiga chiroyli oltin chiziq */
+    padding: 30px 20px !important;
+}
+
+footer p {
+    color: #f5d77d !important;
+    font-weight: 500;
+}
