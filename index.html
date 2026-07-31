@@ -145,15 +145,34 @@
             duration: 1200,
             once: true
         });
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
     </script>
     <script src="script.js"></script>
+
+    <!-- 100% SILLIQ VA RAVON TUSHISH UCHUN SKRIPT -->
     <script>
+        // Loader va muzika kodi
         document.getElementById("openBtn").addEventListener("click", function(){
             document.getElementById("loader").style.display = "none";
             document.getElementById("music").play();
+        });
+
+        // "Taklifnomani ko'rish" tugmasini bosganda yumshoq va silliq tushirish
+        document.querySelector('a[href="#countdown"]').addEventListener("click", function(e) {
+            e.preventDefault(); // Shartta sakrashni to'xtatish
+            const target = document.getElementById("countdown");
+            
+            target.scrollIntoView({
+                behavior: "smooth", // Silliq va ravon sirpanish
+                block: "start"
+            });
         });
     </script>
 
 </body>
 </html>
-
