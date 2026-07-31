@@ -1077,3 +1077,7 @@ body > div:first-child a:hover,
     transform: translateY(-3px) scale(1.03) !important;
     box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4) !important;
 }
+
+html {
+    scroll-behavior: smooth !important;
+}
