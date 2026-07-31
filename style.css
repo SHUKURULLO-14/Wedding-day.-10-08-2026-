@@ -652,14 +652,14 @@ footer p{
 .gallery,
 .thanks {
     /* Rasm ustida matnlar yaxshi o'qilishi uchun yengil oq xiralik va fon rasmi */
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), 
                 url("assets/images/7.jpg") center/cover no-repeat fixed !important;
 }
 
 /* Karta va blklarning foni chiroyli ko'rinishi uchun */
 .card, 
 .count-box div {
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.55) !important;
     backdrop-filter: blur(5px);
 }
 
