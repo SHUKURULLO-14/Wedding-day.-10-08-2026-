@@ -145,28 +145,14 @@
             duration: 1200,
             once: true
         });
-
-        // Loader va muzika kodi (Instagram uchun xavfsizlashtirilgan)
+    </script>
+    <script src="script.js"></script>
+    <script>
         document.getElementById("openBtn").addEventListener("click", function(){
-            const loader = document.getElementById("loader");
-            loader.style.opacity = "0";
-            setTimeout(() => {
-                loader.style.display = "none";
-            }, 500);
-            
-            document.body.style.overflow = "auto"; 
-            
-            // Musiqani xavfsiz ishga tushirish
-            const music = document.getElementById("music");
-            music.play().catch(error => {
-                console.log("Audio autoplay bloklandi:", error);
-            });
-        });
-
-        // Tugma bosganda silliq pastga tushish funksiyasi
-        document.querySelector('.hero-content .btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector('#countdown');
-            target.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("music").play();
         });
     </script>
+
+</body>
+</html>
