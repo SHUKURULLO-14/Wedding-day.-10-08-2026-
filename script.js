@@ -25,7 +25,7 @@ openBtn.addEventListener("click", () => {
 // COUNTDOWN
 // ==========================
 
-const weddingDate = new Date("August 10, 2026 17:30:00").getTime();
+const weddingDate = new Date("August 10, 2026 17:00:00").getTime();
 
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
